@@ -1,0 +1,28 @@
+# robots.txt para Centro Universitario
+# Este archivo ayuda a los motores de búsqueda a indexar tu sitio correctamente
+
+User-agent: *
+Allow: /
+
+# Directorios permitidos
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Archivos que no deben ser indexados
+Disallow: /contacto.php
+Disallow: /contactos.csv
+Disallow: /.htaccess
+Disallow: /database.sql
+
+# Sitemap (actualiza con tu dominio real en producción)
+Sitemap: http://localhost/centrouniversitario/sitemap.xml
+
+# Velocidad de rastreo (opcional)
+# Crawl-delay: 10
+
+# Notas:
+# - Reemplaza localhost con tu dominio real en producción
+# - Este archivo debe estar en la raíz del sitio
+# - Verifica en Google Search Console que funcione correctamente
+

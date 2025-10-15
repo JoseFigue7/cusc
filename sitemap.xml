@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Página principal -->
+    <url>
+        <loc>http://localhost/centrouniversitario/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Sección Inicio -->
+    <url>
+        <loc>http://localhost/centrouniversitario/#inicio</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Sección Nosotros -->
+    <url>
+        <loc>http://localhost/centrouniversitario/#nosotros</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Sección Carreras -->
+    <url>
+        <loc>http://localhost/centrouniversitario/#carreras</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Sección Noticias -->
+    <url>
+        <loc>http://localhost/centrouniversitario/#noticias</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Sección Contacto -->
+    <url>
+        <loc>http://localhost/centrouniversitario/#contacto</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!--
+    NOTA IMPORTANTE:
+    1. Reemplaza "http://localhost/centrouniversitario/" con tu dominio real en producción
+    2. Actualiza las fechas <lastmod> cuando hagas cambios
+    3. Este es un sitemap básico para una página de una sola vista
+    4. Si agregas páginas individuales (blog, noticias individuales, etc.), añádelas aquí
+    5. Envía este sitemap a Google Search Console después del lanzamiento
+    6. Considera usar un generador automático de sitemaps para sitios dinámicos
+    
+    Ejemplo de URL adicional (descomenta y ajusta si tienes páginas individuales):
+    
+    <url>
+        <loc>http://tudominio.com/carrera/ingenieria-sistemas</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    -->
+
+</urlset>
+

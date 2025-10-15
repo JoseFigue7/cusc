@@ -1,0 +1,369 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║              🎓 CENTRO UNIVERSITARIO - SITIO WEB MOCKUP 🎓               ║
+║                                                                           ║
+║                      PRIMER ACERCAMIENTO AL CLIENTE                      ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+📋 ÍNDICE DE ARCHIVOS ENTREGADOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📄 ARCHIVOS PRINCIPALES
+├── index.html          → Página principal completa con las 5 secciones
+├── contacto.php        → Procesador del formulario de contacto
+├── LEEME_PRIMERO.txt   → Este archivo que estás leyendo
+├── GUIA_RAPIDA.md      → Guía rápida de personalización (¡EMPIEZA AQUÍ!)
+└── README.md           → Documentación técnica completa
+
+📁 CARPETAS
+├── css/
+│   └── style.css       → Estilos personalizados (colores, diseño)
+└── js/
+    └── main.js         → JavaScript (interactividad, animaciones)
+
+🗄️ ARCHIVOS DE BASE DE DATOS (OPCIONAL)
+└── database.sql        → Estructura de BD para funcionalidades avanzadas
+
+🌐 ARCHIVOS SEO Y CONFIGURACIÓN
+├── robots.txt          → Para motores de búsqueda
+├── sitemap.xml         → Mapa del sitio para Google
+├── .htaccess           → Configuración de Apache (seguridad, caché)
+├── .gitignore          → Control de versiones Git
+└── favicon.ico         → Placeholder para el icono del sitio
+
+📊 ARCHIVOS GENERADOS AUTOMÁTICAMENTE
+└── contactos.csv       → Se crea al recibir el primer mensaje del formulario
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 INICIO RÁPIDO - 3 PASOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  Abre XAMPP Panel de Control
+    └── Haz clic en START en "Apache"
+
+2️⃣  Abre tu navegador web
+    └── Ve a: http://localhost/centrouniversitario
+
+3️⃣  ¡Listo! Tu sitio está funcionando
+    └── Para personalizar, lee: GUIA_RAPIDA.md
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ CARACTERÍSTICAS INCLUIDAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Diseño moderno y profesional con Bootstrap 5
+✅ Totalmente responsivo (funciona en celular, tablet, PC)
+✅ 5 Secciones completas:
+   • Inicio (Hero con estadísticas animadas)
+   • Nosotros (Misión, valores, características)
+   • Carreras (6 carreras con modales informativos)
+   • Noticias (6 artículos con categorías)
+   • Contacto (Formulario funcional + mapa)
+
+✅ Formulario de contacto funcional
+✅ Integración con redes sociales (Facebook, Twitter, Instagram, etc.)
+✅ Google Maps integrado
+✅ Animaciones suaves al hacer scroll
+✅ Navegación smooth scroll entre secciones
+✅ Botón scroll to top
+✅ SEO optimizado con meta tags
+✅ Código limpio y bien documentado
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📑 SECCIONES DEL SITIO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 🏠 INICIO (HERO)
+   • Título impactante con fondo parallax
+   • Llamados a la acción destacados
+   • Estadísticas animadas:
+     - 20+ años de experiencia
+     - 5000+ estudiantes graduados
+     - 15+ carreras disponibles
+
+2. 👥 NOSOTROS
+   • Misión institucional
+   • 4 Valores corporativos con iconos
+   • Características destacadas
+   • Imagen representativa del campus
+
+3. 🎓 CARRERAS
+   • 6 Carreras presentadas:
+     - Ingeniería en Sistemas
+     - Administración de Empresas
+     - Medicina
+     - Derecho
+     - Marketing Digital
+     - Arquitectura
+   • Cada carrera con:
+     - Imagen atractiva
+     - Descripción breve
+     - Duración, fecha de inicio, certificación
+     - Modal con información detallada
+
+4. 📰 NOTICIAS
+   • 6 Artículos de noticias recientes
+   • Categorías: Institucional, Internacional, Eventos, Logros, Becas, Cultura
+   • Cada noticia con:
+     - Imagen destacada
+     - Fecha y autor
+     - Resumen
+     - Enlace "Leer más"
+
+5. 📧 CONTACTO
+   • Formulario funcional con campos:
+     - Nombre completo
+     - Email
+     - Teléfono
+     - Motivo de consulta
+     - Mensaje
+   • Información de contacto:
+     - Dirección física
+     - Teléfonos
+     - Emails
+     - Horarios de atención
+   • Integración con Google Maps
+   • Enlaces a redes sociales
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎨 PERSONALIZACIÓN RÁPIDA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 CAMBIAR TEXTOS
+   Archivo: index.html
+   Busca y reemplaza:
+   • "Centro Universitario" → Tu nombre
+   • Teléfonos, emails, direcciones
+   • Contenido de cada sección
+
+🎨 CAMBIAR COLORES
+   Archivo: css/style.css (líneas 7-18)
+   Variables CSS:
+   • --primary-color: #1e40af    (Color principal)
+   • --secondary-color: #f59e0b  (Color secundario)
+
+🖼️ CAMBIAR IMÁGENES
+   Actualmente usa imágenes de Unsplash (requiere internet)
+   Para usar imágenes locales:
+   1. Crea carpeta "images/"
+   2. Guarda tus fotos allí
+   3. En index.html, reemplaza URLs de Unsplash
+      por: images/tu-foto.jpg
+
+🌐 CAMBIAR REDES SOCIALES
+   Archivo: index.html
+   Busca los href con:
+   • facebook.com → Tu página
+   • instagram.com → Tu cuenta
+   • twitter.com → Tu cuenta
+   • linkedin.com → Tu página
+   • youtube.com → Tu canal
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📧 FORMULARIO DE CONTACTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ YA FUNCIONA - Los mensajes se guardan en: contactos.csv
+
+OPCIONES DE ALMACENAMIENTO:
+
+1. CSV (Configurado por defecto)
+   • Abre contactos.csv con Excel
+   • Verás todos los mensajes recibidos
+   • No requiere configuración adicional
+
+2. Email (Requiere configuración)
+   • Edita contacto.php (línea 126)
+   • Cambia: $destinatario = 'tu@email.com';
+   • Necesitas configurar PHP mail() en tu servidor
+
+3. Base de Datos (Avanzado)
+   • Importa database.sql en phpMyAdmin
+   • Descomenta código en contacto.php (líneas 149-167)
+   • Configura credenciales de BD
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🛠️ TECNOLOGÍAS UTILIZADAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• HTML5 - Estructura semántica
+• CSS3 - Estilos modernos con variables CSS
+• Bootstrap 5.3.2 - Framework responsivo
+• JavaScript ES6+ - Interactividad
+• jQuery 3.7.1 - Manipulación del DOM
+• PHP 7+ - Procesamiento del servidor
+• AOS - Animaciones al hacer scroll
+• Bootstrap Icons - Iconografía
+• Google Fonts (Poppins) - Tipografía
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📱 PRUEBA EN DIFERENTES DISPOSITIVOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ COMPUTADORA
+   • Chrome, Firefox, Edge, Safari
+   • URL: http://localhost/centrouniversitario
+
+✅ CELULAR/TABLET (Misma red WiFi)
+   1. En Windows CMD escribe: ipconfig
+   2. Busca tu IPv4 (ej: 192.168.1.100)
+   3. En el celular ve a: http://TU-IP/centrouniversitario
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚨 SOLUCIÓN DE PROBLEMAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ No puedo acceder al sitio
+   ✓ Verifica que Apache esté iniciado (verde) en XAMPP
+   ✓ Usa: http://localhost/centrouniversitario (no olvides la carpeta)
+   ✓ Reinicia Apache
+
+❌ Las imágenes no cargan
+   ✓ Necesitas conexión a internet (son de Unsplash)
+   ✓ O reemplaza con imágenes locales
+
+❌ El formulario no funciona
+   ✓ Sí funciona, revisa el archivo: contactos.csv
+   ✓ El email puede requerir configuración adicional
+
+❌ Los estilos se ven mal
+   ✓ Limpia caché del navegador (Ctrl + Shift + R)
+   ✓ Verifica que la carpeta css/ exista
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 DOCUMENTACIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 GUIA_RAPIDA.md
+   • Personalización paso a paso
+   • Checklist de configuración
+   • Consejos y trucos
+
+📖 README.md
+   • Documentación técnica completa
+   • Instalación y configuración
+   • Características detalladas
+   • Próximos pasos
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌐 PUBLICAR EN INTERNET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Cuando estés listo para lanzar el sitio:
+
+1. Contrata hosting web (Hostinger, SiteGround, etc.)
+2. Sube todos los archivos vía FTP
+3. Actualiza URLs en sitemap.xml y robots.txt
+4. Configura SSL (HTTPS)
+5. Registra en Google Search Console
+
+Ver README.md para instrucciones detalladas.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ CHECKLIST ANTES DE PRESENTAR AL CLIENTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Pre-presentación:
+□ Revisar ortografía y gramática
+□ Probar todos los enlaces
+□ Verificar que el formulario funcione
+□ Probar en celular
+□ Probar en diferentes navegadores
+□ Actualizar información de contacto placeholder
+
+Personalización básica:
+□ Cambiar nombre de la institución
+□ Actualizar teléfonos y emails
+□ Modificar dirección
+□ Agregar enlaces de redes sociales reales
+□ Personalizar colores institucionales
+
+Presentación:
+□ Preparar demo en vivo
+□ Tener lista de mejoras futuras
+□ Explicar funcionalidades
+□ Mostrar responsividad
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 PRÓXIMOS PASOS / MEJORAS FUTURAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Funcionalidades que se pueden agregar:
+
+• Sistema de login para estudiantes
+• Portal de inscripción online
+• Sistema de pagos integrado
+• Blog dinámico de noticias
+• Panel de administración
+• Base de datos completa
+• Galería de fotos/videos
+• Calendario de eventos
+• Chat en vivo
+• Testimonios de estudiantes
+• Sistema de gestión académica
+• Plataforma e-learning
+• App móvil complementaria
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ NOTAS IMPORTANTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Este es un MOCKUP/PROTOTIPO para presentación inicial
+• Las imágenes son placeholders de Unsplash (requieren internet)
+• Los datos son ficticios y demostrativos
+• Los enlaces de redes sociales apuntan a páginas genéricas
+• El mapa muestra una ubicación de ejemplo
+• El formulario guarda en CSV por defecto
+• Todo el contenido es personalizable
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 CONSEJOS FINALES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Empieza leyendo: GUIA_RAPIDA.md
+2. Prueba el sitio antes de personalizarlo
+3. Haz respaldos antes de hacer cambios grandes
+4. Usa imágenes de alta calidad para mejor impacto
+5. Mantén coherencia en colores y estilos
+6. Prueba en diferentes dispositivos
+7. Considera usar fotos reales de la institución
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║                       🎉 ¡TODO LISTO PARA EMPEZAR! 🎉                    ║
+║                                                                           ║
+║              Tienes un sitio web profesional y completamente             ║
+║              funcional listo para presentar al cliente.                  ║
+║                                                                           ║
+║              Lee la GUIA_RAPIDA.md para personalizarlo.                  ║
+║                                                                           ║
+║                            ¡Éxito en tu proyecto!                        ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Versión: 1.0 - Mockup Inicial
+Fecha: Octubre 2025
+Stack: HTML5 + CSS3 + Bootstrap 5 + JavaScript + jQuery + PHP
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
