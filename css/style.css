@@ -123,6 +123,7 @@ img {
     transform: translateY(-2px);
 }
 
+
 /* boton para mandar al area de contacto desde el encaberzado*/
 .boton-inicio-contacto a {
   color: #fff !important;
@@ -1074,6 +1075,16 @@ img {
 .modal-content .btn-light:hover {
   background-color: #e0e0e0;
 }
+.btn-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
 
 /* Botón de cerrar */
 .modal-footer .btn-secondary {
@@ -1244,3 +1255,6 @@ body.no-scroll {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
+.shiny-text {
+  color: #ffffff; /* Rojo coral, puedes cambiarlo por otro */
+}

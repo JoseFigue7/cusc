@@ -1,44 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Derecho - Detalles de la Carrera</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Derecho - Detalles de la Carrera</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../../css/carreras.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../CSS/carreras.css" />
 </head>
-<body>
-    <!-- Imagen Hero -->
-    <section class="hero-image">
-        <img src="../../Imagenes/compressed-derecho.jpg" alt="Derecho" />
-    </section>
+<body data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="0">
 
-    <!-- Contenido -->
-    <main class="container my-5">
-        <h1 class="mb-4">Derecho</h1>
+<!-- Hero con ola decorativa -->
+<section class="career-hero position-relative">
+  <img src="../../Imagenes/compressed-derecho.jpg" alt="Carrera de Derecho" class="img-fluid w-100" />
+  <div class="custom-wave">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path d="M0,0 C480,100 960,0 1440,100 L1440,150 L0,150 Z" fill="#e3f2fd"></path>
+    </svg>
+  </div>
+</section>
 
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8">
-                <h2>Descripción</h2>
-                <p>¿Te interesa defender los derechos, interpretar las leyes y contribuir a una sociedad más justa? La carrera de Derecho te invita a formar parte de un entorno profesional donde el análisis jurídico, la argumentación y la ética son pilares fundamentales.</p>
+<!-- Contenido -->
+<main class="container my-5">
+  <div class="text-center mb-5" data-aos="fade-up">
+    <h1 class="titulo-carrera">Carrera de <span class="shiny-text">Derecho</span></h1>
+    <p class="subtexto">Formando <strong class="shiny-text">juristas</strong> con ética, criterio y vocación de justicia</p>
+    <a class="cta-button" href="../../index.html#contacto" aria-label="Inscribirme en Derecho">Inscribirme</a>
+  </div>
 
-                <h3>Detalles de la Carrera</h3>
-                <ul class="list-unstyled">
-                    <li><i class="bi bi-clock"></i> Duración: 3 años</li>
-                    <li><i class="bi bi-calendar"></i> Inicio: 2026</li>
-                    <li><i class="bi bi-award"></i> Título Oficial</li>
-                </ul>
+  <div class="row g-4" data-aos="fade-up">
+    <div class="col-md-12">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-book"></i> Descripción breve</h3>
+        <p>Prepara profesionales con dominio del sistema jurídico mexicano, capaces de interpretar leyes, defender causas y participar en procesos legales con ética y responsabilidad.</p>
+      </div>
+    </div>
 
-                <a href="../../index.html" class="btn btn-primary mt-3">
-                    <i class="bi bi-arrow-left"></i> Volver a Carreras
-                </a>
-            </div>
+    <div class="col-md-6">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-clock"></i> Duración</h3>
+        <p>9 cuatrimestres (aproximadamente 3 años y medio)</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-calendar"></i> Inicio</h3>
+        <p>2026</p>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="info-box" data-aos="fade-up">
+        <h3><i class="bi bi-mortarboard"></i> Plan de estudios</h3>
+        <div class="study-grid">
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-journal-text" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Derecho romano, constitucional, penal, civil y mercantil</h4><p>Fundamentos y ramas esenciales del derecho mexicano.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-globe-americas" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Derecho internacional público y privado</h4><p>Normativas que regulan relaciones entre estados y particulares a nivel global.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-bank" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Derecho laboral, fiscal y ecológico</h4><p>Regulación del trabajo, tributación y protección ambiental.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-file-earmark-text" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Procesos administrativos, fiscales y de amparo</h4><p>Procedimientos legales ante autoridades y defensa constitucional.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-person-bounding-box" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Criminología y medicina forense</h4><p>Estudio del delito y análisis médico legal aplicado a la justicia.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-building" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Clínicas jurídicas en derecho civil, penal, laboral y fiscal</h4><p>Práctica legal supervisada en distintas áreas del derecho.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-pencil-square" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Seminarios de tesis</h4><p>Desarrollo de investigación jurídica y preparación para titulación.</p></div>
+          </div>
+
+          <a href="../../Pénsum de los cursos/derecho.pdf" download class="btn descarga-esquina">
+          Descargar pensum completo
+        </a>
         </div>
-    </main>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="col-md-12">
+      <div class="info-box glass-card" data-aos="fade-up">
+        <h3><i class="bi bi-briefcase"></i> Campo laboral</h3>
+        <p>Ministerio Público, tribunales, defensorías, asesoría legal, notariado, consultoría jurídica, organizaciones civiles, docencia y litigio.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

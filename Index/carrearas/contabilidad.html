@@ -1,44 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contabilidad - Detalles de la Carrera</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contabilidad - Detalles de la Carrera</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../../css/carreras.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../CSS/carreras.css" />
 </head>
-<body>
-    <!-- Imagen Hero -->
-    <section class="hero-image">
-        <img src="../../Imagenes/compressed-contabilidad.jpg" alt="Contabilidad" />
-    </section>
+<body data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="0">
 
-    <!-- Contenido -->
-    <main class="container my-5">
-        <h1 class="mb-4">Contabilidad</h1>
+<!-- Hero con ola decorativa -->
+<section class="career-hero position-relative">
+  <img src="../../Imagenes/compressed-contabilidad.jpg" alt="Carrera de Contabilidad" class="img-fluid w-100" />
+  <div class="custom-wave">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path d="M0,0 C480,100 960,0 1440,100 L1440,150 L0,150 Z" fill="#e3f2fd"></path>
+    </svg>
+  </div>
+</section>
 
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8">
-                <h2>Descripción</h2>
-                <p>¿Te interesa comprender el manejo financiero de las organizaciones, analizar costos y contribuir al desarrollo económico? La carrera de Contabilidad te invita a convertirte en un profesional clave en la toma de decisiones empresariales.</p>
+<!-- Contenido -->
+<main class="container my-5">
+  <div class="text-center mb-5" data-aos="fade-up">
+    <h1 class="titulo-carrera">Carrera de <span class="shiny-text">Contabilidad</span></h1>
+    <p class="subtexto">Formando <strong class="shiny-text">profesionales</strong> en gestión financiera y toma de decisiones estratégicas</p>
+    <a class="cta-button" href="../../index.html#contacto" aria-label="Inscribirme en Contabilidad">Inscribirme</a>
+  </div>
 
-                <h3>Detalles de la Carrera</h3>
-                <ul class="list-unstyled">
-                    <li><i class="bi bi-clock"></i> Duración: 3 años</li>
-                    <li><i class="bi bi-calendar"></i> Inicio: 2026</li>
-                    <li><i class="bi bi-award"></i> Título Oficial</li>
-                </ul>
+  <div class="row g-4" data-aos="fade-up">
+    <div class="col-md-12">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-book"></i> Descripción breve</h3>
+        <p>Prepara profesionales éticos y competentes en el manejo financiero, fiscal y contable de organizaciones, con capacidad para tomar decisiones estratégicas.</p>
+      </div>
+    </div>
 
-                <a href="../../index.html" class="btn btn-primary mt-3">
-                    <i class="bi bi-arrow-left"></i> Volver a Carreras
-                </a>
-            </div>
+    <div class="col-md-6">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-clock"></i> Duración</h3>
+        <p>8 cuatrimestres (aproximadamente 3 años)</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-calendar"></i> Inicio</h3>
+        <p>2026</p>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="info-box" data-aos="fade-up">
+        <h3><i class="bi bi-mortarboard"></i> Plan de estudios</h3>
+        <div class="study-grid">
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-journal-text" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Contabilidad básica, intermedia y avanzada</h4><p>Principios, técnicas y análisis contable en distintos niveles.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-calculator" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Matemáticas financieras y estadística</h4><p>Herramientas cuantitativas para la toma de decisiones económicas.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-file-earmark-text" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Derecho civil, fiscal y laboral</h4><p>Normativas legales aplicadas al entorno contable y empresarial.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-check2-circle" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Auditoría I y II</h4><p>Evaluación de procesos contables y control interno.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-cash-coin" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Finanzas empresariales</h4><p>Gestión financiera y análisis de inversiones en organizaciones.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-bar-chart" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Presupuestos y costos</h4><p>Planeación financiera y control de gastos operativos.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-building" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Contabilidad hotelera, bancaria y gubernamental</h4><p>Aplicación contable en sectores especializados.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-receipt" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Impuestos I y II</h4><p>Cálculo, declaración y cumplimiento de obligaciones fiscales.</p></div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-pencil-square" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content"><h4>Seminarios de contabilidad, auditoría, impuestos y tesis</h4><p>Integración de conocimientos para la titulación profesional.</p></div>
+          </div>
+
+          <a href="../../Pénsum de los cursos/Contaduria.pdf" download class="btn descarga-esquina">
+            Descargar pensum completo
+          </a>
         </div>
-    </main>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="col-md-12">
+      <div class="info-box glass-card" data-aos="fade-up">
+        <h3><i class="bi bi-briefcase"></i> Campo laboral</h3>
+        <p>Contabilidad general, auditoría, fiscal, costos, finanzas, docencia, consultoría contable, empresas privadas, instituciones públicas.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

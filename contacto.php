@@ -11,6 +11,31 @@ error_reporting(E_ALL);
 ini_set('display_errors', 0);
 header('Content-Type: application/json; charset=utf-8');
 
+<?php
+// Validar reCAPTCHA
+$recaptcha = $_POST['g-recaptcha-response'];
+$secret = '6Le31ewrAAAAABUx2Cx6YVdkJxbHcU1n_a3d4eOb';
+
+$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$recaptcha");
+$result = json_decode($response);
+
+if (!$result->success) {
+  // Si falla el reCAPTCHA, no procesamos el formulario
+  echo "Por favor verifica que no eres un robot.";
+  exit;
+}
+
+// Aquí continúa el procesamiento normal del formulario
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$telefono = $_POST['telefono'];
+$interes = $_POST['interes'];
+$mensaje = $_POST['mensaje'];
+
+// Aquí puedes enviar el correo, guardar en base de datos, etc.
+echo "Formulario enviado correctamente.";
+?>
+
 // Iniciar sesión para protección contra spam
 session_start();
 
@@ -97,7 +122,7 @@ if (!empty($errores)) {
 
 // ===== CONFIGURACIÓN DE EMAIL =====
 // IMPORTANTE: Configura estos valores según tu servidor de correo
-$destinatario = 'informes@centrouniversitario.edu'; // Email donde recibirás los mensajes
+$destinatario = 'contacto@cusc.mx'; // Email donde recibirás los mensajes
 $asunto = 'Nuevo mensaje de contacto - Centro Universitario';
 
 // Mapeo de opciones de interés
@@ -269,8 +294,8 @@ $cuerpo_confirmacion = '
             
             <p>Si tu consulta es urgente, puedes comunicarte con nosotros directamente:</p>
             <ul>
-                <li>📞 Teléfono: +52 (555) 123-4567</li>
-                <li>📧 Email: informes@centrouniversitario.edu</li>
+                <li>📞 Teléfono: +55 5975 6260</li>
+                <li>📧 Email: contacto@cusc.mx</li>
                 <li>🕐 Horario: Lunes a Viernes, 8:00 - 20:00</li>
             </ul>
             
