@@ -28,6 +28,10 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     
@@ -55,7 +59,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#noticias">Noticias</a>
+                        <a class="nav-link" href="#noticias">Construyendo Futuro</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
@@ -77,42 +81,69 @@
                     <h1 class="display-3 fw-bold mb-4">Construye Tu Futuro Profesional</h1>
                     <p class="lead mb-5">Educación de excelencia con un modelo académico moderno, diseñado para formar líderes y profesionales exitosos desde el primer día.</p>
                     <div class="d-flex gap-3 justify-content-center flex-wrap mb-5">
-                        <a href="#carreras" class="btn btn-primary btn-lg">
-                            <i class="bi bi-book"></i> Conoce Nuestras Carreras
-                        </a>
+                        
+                        <!--Boton animado-->
+                        <div>
+                        <button class="btn"><i class="animation"></i> <a class="boton-animado" href="#carreras">Conoces Nuestras Carreras </a><i class="animation"></i>
+                        </button>
+                        </div>
+                        <!--Fin boton animado-->
+                    <div>
                         <a href="#nosotros" class="btn btn-outline-light btn-lg">
                             <i class="bi bi-info-circle"></i> Más Información
                         </a>
                     </div>
                     
                     <!-- Quick Access Cards -->
-                    <div class="row g-3 mt-4">
+                    <div class="row g-3 mt-4 justify-content-center">
                         <div class="col-md-3 col-6">
+                            <a href="#contacto" class="quick-access-card-link">
                             <div class="quick-access-card">
                                 <i class="bi bi-mortarboard-fill"></i>
-                                <span>Admisiones</span>
+                                <span>Inscríbete</span>
                             </div>
-                        </div>
+                                </a>
+                    </div>
                         <div class="col-md-3 col-6">
-                            <div class="quick-access-card">
+                            <div class="quick-access-card" data-bs-toggle="modal" data-bs-target="#pensumModal" style="cursor: pointer;">
                                 <i class="bi bi-book-half"></i>
                                 <span>Pénsum</span>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6">
-                            <div class="quick-access-card">
-                                <i class="bi bi-calendar-check"></i>
-                                <span>Calendario</span>
+
+                                        <!-- Modal Pénsum -->
+                                         
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                    <div class="modal fade" id="pensumModal" tabindex="-1" aria-labelledby="pensumModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="background-color: #002b5c; color: white; border-radius: 1rem;">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="pensumModalLabel">Descarga el Pénsum</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Selecciona el programa académico que deseas descargar</p>
+                            <div class="menu-grid">
+                            <a href="Pénsum de los cursos/Derecho.pdf" class="menu-square" download><i class="fas fa-balance-scale"></i><span>Derecho</span></a>
+                            <a href="Pénsum de los cursos/Mercadotecnia.pdf" class="menu-square" download><i class="fas fa-bullhorn"></i><span>Mercadotecnia</span></a>
+                            <a href="Pénsum de los cursos/Contaduria.pdf" class="menu-square" download><i class="fas fa-calculator"></i><span>Contaduría</span></a>
+                            <a href="Pénsum de los cursos/Criminologia.pdf" class="menu-square" download><i class="fas fa-user-shield"></i><span>Criminología</span></a>
+                            <a href="Pénsum de los cursos/Administracion.pdf" class="menu-square" download><i class="fas fa-briefcase"></i><span>Administración</span></a>
+                            <a href="Pénsum de los cursos/pedagogía.pdf" class="menu-square" download><i class="fas fa-chalkboard-teacher"></i><span>Pedagogía</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6">
-                            <div class="quick-access-card">
-                                <i class="bi bi-people-fill"></i>
-                                <span>Comunidad</span>
-                            </div>
+                        <div class="modal-footer border-0 justify-content-end">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
                         </div>
                     </div>
-                    
+                    </div>
+
+
+
+
+
                     <!-- Stats -->
                     <div class="row mt-5 pt-5">
                         <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
@@ -130,8 +161,7 @@
                         </div>
                         <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="300">
                             <div class="stat-box">
-                                <h2 class="display-4 fw-bold">6</h2>
-                                <p class="mb-0">Carreras Disponibles</p>
+                                <p class="mb-0">Educación superior que transforma vidas</p>
                             </div>
                         </div>
                     </div>
@@ -165,7 +195,7 @@
   <!-- Columna de la imagen -->
   <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
     <div class="about-image-wrapper">
-      <img src="Imagenes/universidad animada.png" 
+      <img src="Imagenes/compressed-universidad animada.png" 
            alt="Foto del centro universitario" 
            class="img-fluid rounded-4 shadow-lg">
     </div>
@@ -175,114 +205,106 @@
   <div class="col-lg-6" data-aos="fade-left">
     <h3 class="mb-4">Nuestra Misión</h3>
     <p class="text-muted mb-4">
-      En Centro Universitario nos dedicamos a formar profesionales íntegros, competentes y comprometidos 
-      con el desarrollo de la sociedad. Ofrecemos una educación de calidad que combina teoría y práctica, 
-      preparando a nuestros estudiantes para los desafíos del mundo laboral actual.
+      En la Universidad de México formamos profesionales íntegros, 
+      competentes y comprometidos con su entorno, mediante una 
+      educación superior de alta calidad que integra conocimientos 
+      técnicos, valores humanos y sensibilidad social. 
+      Promovemos el desarrollo académico y personal a través de 
+      metodologías innovadoras que responden a los desafíos 
+      contemporáneos, preparando ciudadanos conscientes y 
+      responsables. Nuestra comunidad impulsa la investigación 
+      y la innovación como motores del progreso nacional, 
+      generando conocimiento aplicable que fortalece el desarrollo 
+      científico y tecnológico del país.
     </p>
     <div class="row g-3">
       <div class="col-md-6">
         <div class="feature-box">
           <i class="bi bi-check-circle-fill text-primary"></i>
-          <span>Docentes Calificados</span>
+          <span>Programas Educativos Actualizados</span>
         </div>
       </div>
       <div class="col-md-6">
         <div class="feature-box">
           <i class="bi bi-check-circle-fill text-primary"></i>
-          <span>Ambientes diseñados para tu desarrollo</span>
+          <span>Desarrollo de Habilidades Integrales</span>
         </div>
       </div>
       <div class="col-md-6">
         <div class="feature-box">
           <i class="bi bi-check-circle-fill text-primary"></i>
-          <span>Educación con sello de calidad</span>
+          <span>Vinculación Productiva y Social</span>
         </div>
       </div>
       <div class="col-md-6">
         <div class="feature-box">
           <i class="bi bi-check-circle-fill text-primary"></i>
-          <span>Puente directo al mundo profesional</span>
+          <span>Ambiente Educativo Inclusivo</span>
         </div>
       </div>
     </div>
   </div> <!-- cierre correcto de la columna de texto -->
 </div>
-
-
-
-
-
-
             <!-- Valores -->
-            <div class="row g-4 mt-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="value-card text-center">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-award-fill"></i>
-                        </div>
-                        <h4>Excelencia</h4>
-                        <p class="text-muted mb-0">Comprometidos con la calidad en cada aspecto de la formación académica</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="value-card text-center">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-people-fill"></i>
-                        </div>
-                        <h4>Comunidad</h4>
-                        <p class="text-muted mb-0">Fomentamos un ambiente de colaboración y respeto mutuo</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="value-card text-center">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-lightbulb-fill"></i>
-                        </div>
-                        <h4>Innovación</h4>
-                        <p class="text-muted mb-0">Aplicamos metodologías modernas y tecnología de vanguardia</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="value-card text-center">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-heart-fill"></i>
-                        </div>
-                        <h4>Integridad</h4>
-                        <p class="text-muted mb-0">Promovemos valores éticos y responsabilidad social</p>
-                    </div>
-                </div>
+            <div class="value-container row g-4 mt-4">
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="value-card text-center">
+      <div class="icon-box mb-3">
+        <i class="bi bi-award-fill"></i>
+      </div>
+      <h4>Excelencia</h4>
+      <p class="text-muted mb-0">Comprometidos con la calidad en cada aspecto de la formación académica</p>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <div class="value-card text-center">
+      <div class="icon-box mb-3">
+        <i class="bi bi-people-fill"></i>
+      </div>
+      <h4>Comunidad</h4>
+      <p class="text-muted mb-0">Fomentamos un ambiente de colaboración y respeto mutuo</p>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <div class="value-card text-center">
+      <div class="icon-box mb-3">
+        <i class="bi bi-lightbulb-fill"></i>
+      </div>
+      <h4>Innovación</h4>
+      <p class="text-muted mb-0">Aplicamos metodologías modernas y tecnología de vanguardia</p>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+    <div class="value-card text-center">
+      <div class="icon-box mb-3">
+        <i class="bi bi-heart-fill"></i>
+      </div>
+      <h4>Integridad</h4>
+      <p class="text-muted mb-0">Promovemos valores éticos y responsabilidad social</p>
+    </div>
+  </div>
+</div>
             </div>
         </div>
     </section>
 
     <!-- Carreras Section -->
-    <section id="carreras" class="py-5">
-        <div class="container py-5">
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-                    <h2 class="section-title">Nuestras Carreras</h2>
-                    <div class="title-divider"></div>
-                    <p class="lead text-muted">Descubre la carrera que se adapta a tus intereses y objetivos profesionales</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Carrera 1 -->
+<div class="container"> <!-- Agrega esta línea al inicio de la sección -->
+            <di class="row g-4">
+                <!-- Carrera 1: Pedagogía -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="career-card h-100">
                         <div class="career-image">
-                            <img src="Imagenes/carrera pedagogía.jpg" 
-                                 alt="pedagogía" class="img-fluid">
+                            <img src="Imagenes/compressed-pedagogía.jpg" alt="pedagogía" class="img-fluid">
                             <div class="career-overlay">
-                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#carreraModal1">
-                                    Ver Detalles
-                                </button>
+                                <a class="btn btn-light" href="Index/carrearas/pedagogia.html">Ver Detalles</a>
                             </div>
                         </div>
                         <div class="career-content">
-                            <div class="career-icon">
-                                <i class="bi bi-book"></i>
-                            </div>
+                            <div class="career-icon"><i class="bi bi-book"></i></div>
                             <h3>Pedagogía</h3>
                             <p class="text-muted">¿Te apasiona transformar vidas a través del conocimiento? La carrera de Pedagogía te prepara para formar, inspirar y guiar a futuras generaciones. ¡Únete y sé parte del cambio educativo que el mundo necesita!</p>
                             <ul class="career-features">
@@ -294,24 +316,19 @@
                     </div>
                 </div>
 
-                <!-- Carrera 2 -->
+                <!-- Carrera 2: Criminología -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="career-card h-100">
                         <div class="career-image">
-                            <img src="Imagenes/criminologia.jpg" 
-                                 alt="Criminología" class="img-fluid">
+                            <img src="Imagenes/compressed-criminologia.jpg" alt="Criminología" class="img-fluid">
                             <div class="career-overlay">
-                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#carreraModal2">
-                                    Ver Detalles
-                                </button>
+                                <a class="btn btn-light" href="Index/carrearas/criminologia.html">Ver Detalles</a>
                             </div>
                         </div>
                         <div class="career-content">
-                            <div class="career-icon">
-                                <i class="bi bi-search"></i>
-                            </div>
-                            <h3>Criminología</h3>
-                            <p class="text-muted">¿Te interesa entender el comportamiento delictivo, investigar hechos criminales y contribuir a la justicia? La carrera de Criminología te prepara para analizar el crimen desde una perspectiva científica, ética y social</p>
+                            <div class="career-icon"><i class="bi bi-search"></i></div>
+                            <h3>Criminología y Criminalística</h3>
+                            <p class="text-muted">¿Te interesa entender el comportamiento delictivo, investigar hechos criminales y contribuir a la justicia? La carrera de Criminología te prepara para analizar el crimen desde una perspectiva científica, ética y social.</p>
                             <ul class="career-features">
                                 <li><i class="bi bi-clock"></i> Duración: 3 años</li>
                                 <li><i class="bi bi-calendar"></i> Inicio: 2026</li>
@@ -320,25 +337,21 @@
                         </div>
                     </div>
                 </div>
+            
 
-                <!-- Carrera 3 -->
+                <!-- Carrera 3: Administración -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="career-card h-100">
                         <div class="career-image">
-                            <img src="Imagenes/administracion.jpg" 
-                                 alt="Administración" class="img-fluid">
+                            <img src="Imagenes/compressed-administracion.jpg" alt="Administración" class="img-fluid">
                             <div class="career-overlay">
-                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#carreraModal3">
-                                    Ver Detalles
-                                </button>
+                                <a class="btn btn-light" href="Index/carrearas/administracion.html">Ver Detalles</a>
                             </div>
                         </div>
                         <div class="career-content">
-                            <div class="career-icon">
-                                <i class="bi bi-bar-chart-line"></i>
-                            </div>
-                            <h3>Administración</h3>
-                            <p class="text-muted">¿Te interesa liderar proyectos, tomar decisiones estratégicas y transformar organizaciones? La carrera de Administración te prepara para dirigir con visión, eficiencia y responsabilidad en el mundo empresarial</p>
+                            <div class="career-icon"><i class="bi bi-bar-chart-line"></i></div>
+                            <h3>Administración de Empresas y Negocios</h3>
+                            <p class="text-muted">¿Te interesa liderar proyectos, tomar decisiones estratégicas y transformar organizaciones? La carrera de Administración te prepara para dirigir con visión, eficiencia y responsabilidad en el mundo empresarial.</p>
                             <ul class="career-features">
                                 <li><i class="bi bi-clock"></i> Duración: 3 años</li>
                                 <li><i class="bi bi-calendar"></i> Inicio: 2026</li>
@@ -348,53 +361,21 @@
                     </div>
                 </div>
 
-                <!-- Carrera 4 -->
+                <!-- Carrera 4: Derecho -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="career-card h-100">
                         <div class="career-image">
-                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop" 
-                                 alt="Derecho" class="img-fluid">
+                            <img src="Imagenes/compressed-derecho.jpg" alt="Derecho" class="img-fluid">
                             <div class="career-overlay">
-                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#carreraModal4">
-                                    Ver Detalles
-                                </button>
+                                <a class="btn btn-light" href="Index/carrearas/derecho.html">Ver Detalles</a>
                             </div>
                         </div>
                         <div class="career-content">
-                            <div class="career-icon">
-                                <i class="bi bi-bank"></i>
-                            </div>
+                            <div class="career-icon"><i class="bi bi-bank"></i></div>
                             <h3>Derecho</h3>
                             <p class="text-muted">¿Te interesa defender los derechos, interpretar las leyes y contribuir a una sociedad más justa? La carrera de Derecho te invita a formar parte de un entorno profesional donde el análisis jurídico, la argumentación y la ética son pilares fundamentales.</p>
                             <ul class="career-features">
                                 <li><i class="bi bi-clock"></i> Duración: 3 años</li>
-                                <li><i class="bi bi-calendar"></i> Inicio:  2026</li>
-                                <li><i class="bi bi-award"></i> Título Oficial</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carrera 5 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="career-card h-100">
-                        <div class="career-image">
-                            <img src="Imagenes/mercadotecnia.jpg" 
-                                 alt="Marketing Digital" class="img-fluid">
-                            <div class="career-overlay">
-                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#carreraModal5">
-                                    Ver Detalles
-                                </button>
-                            </div>
-                        </div>
-                        <div class="career-content">
-                            <div class="career-icon">
-                                <i class="bi bi-graph-up-arrow"></i>
-                            </div>
-                            <h3>Mercadotecnia</h3>
-                            <p class="text-muted">¿Te apasiona conectar marcas con personas, crear estrategias creativas y entender el comportamiento del consumidor? La carrera de Mercadotecnia te invita a construir puentes entre las empresas y sus clientes, con visión estratégica e innovación.</p>
-                            <ul class="career-features">
-                                <li><i class="bi bi-clock"></i> Duración: 3 años</li>
                                 <li><i class="bi bi-calendar"></i> Inicio: 2026</li>
                                 <li><i class="bi bi-award"></i> Título Oficial</li>
                             </ul>
@@ -402,41 +383,60 @@
                     </div>
                 </div>
 
-                <!-- Carrera 6 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="career-card h-100">
-                        <div class="career-image">
-                            <img src="Imagenes/contabilidad.jpg" 
-                                 alt="Arquitectura" class="img-fluid">
-                            <div class="career-overlay">
-                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#carreraModal6">
-                                    Ver Detalles
-                                </button>
-                            </div>
+            <!-- Carrera 5: Mercadotecnia -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="career-card h-100">
+                    <div class="career-image">
+                        <img src="Imagenes/compressed-mercadotecnia.jpg" alt="Mercadotecnia" class="img-fluid">
+                        <div class="career-overlay">
+                            <a class="btn btn-light" href="Index/carrearas/mercadotecnia.html">Ver Detalles</a>
                         </div>
-                        <div class="career-content">
-                            <div class="career-icon">
-                                <i class="bi bi-calculator"></i>
-                            </div>
-                            <h3>Contabilidad</h3>
-                            <p class="text-muted">¿Te interesa comprender el manejo financiero de las organizaciones, analizar costos y contribuir al desarrollo económico? La carrera de Contabilidad te invita a convertirte en un profesional clave en la toma de decisiones empresariales.</p>
-                            <ul class="career-features">
-                                <li><i class="bi bi-clock"></i> Duración: 3 años</li>
-                                <li><i class="bi bi-calendar"></i> Inicio: 2026</li>
-                                <li><i class="bi bi-award"></i> Título Oficial</li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="career-content">
+                        <div class="career-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h3>Mercadotecnia</h3>
+                        <p class="text-muted">¿Te apasiona conectar marcas con personas, crear estrategias creativas y entender el comportamiento del consumidor? La carrera de Mercadotecnia te invita a construir puentes entre las empresas y sus clientes, con visión estratégica e innovación.</p>
+                        <ul class="career-features">
+                            <li><i class="bi bi-clock"></i> Duración: 3 años</li>
+                            <li><i class="bi bi-calendar"></i> Inicio: 2026</li>
+                            <li><i class="bi bi-award"></i> Título Oficial</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center mt-5" data-aos="fade-up">
-                <a href="#contacto" class="btn btn-primary btn-lg">
-                    <i class="bi bi-file-text"></i> Solicita Información de Carreras
-                </a>
+            <!-- Carrera 6: Contabilidad -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="career-card h-100">
+                    <div class="career-image">
+                        <img src="Imagenes/compressed-contabilidad.jpg" alt="Contabilidad" class="img-fluid">
+                        <div class="career-overlay">
+                            <a class="btn btn-light" href="Index/carrearas/contabilidad.html">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="career-content">
+                        <div class="career-icon"><i class="bi bi-calculator"></i></div>
+                        <h3>Contabilidad</h3>
+                        <p class="text-muted">¿Te interesa comprender el manejo financiero de las organizaciones, analizar costos y contribuir al desarrollo económico? La carrera de Contabilidad te invita a convertirte en un profesional clave en la toma de decisiones empresariales.</p>
+                        <ul class="career-features">
+                            <li><i class="bi bi-clock"></i> Duración: 3 años</li>
+                            <li><i class="bi bi-calendar"></i> Inicio: 2026</li>
+                            <li><i class="bi bi-award"></i> Título Oficial</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Botón final -->
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="#contacto" class="btn btn-primary btn-lg">
+                <i class="bi bi-file-text"></i> Solicita Información de Carreras
+            </a>
+        </div>
+</div>
+<!-- Fin Carreras Section -->
+
 
     <!-- Noticias Section -->
     <section id="noticias" class="py-5 section-bg">
@@ -464,7 +464,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="featured-news-image">
-                                    <img src="Imagenes/universidad.jpg" alt="Inscripciones 2026" class="img-fluid rounded">
+                                    <img src="Imagenes/compressed-personas-que-se-graduan-con-primeros-planos-de-diplomas.jpg" alt="Inscripciones 2026" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
@@ -477,8 +477,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <article class="news-card h-100">
                         <div class="news-image">
-                            <img src="Imagenes/excelencia.jpg" 
-                                 alt="Inauguración Laboratorios" class="img-fluid">
+                            <img src="Imagenes/compressed-excelencia.jpg" 
+                                 alt="Excelencia" class="img-fluid">
                             <div class="news-badge">Valores</div>
                         </div>
                         <div class="news-content">
@@ -500,7 +500,7 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <article class="news-card h-100">
                         <div class="news-image">
-                            <img src="Imagenes/practico.jpg" 
+                            <img src="Imagenes/compressed-practico.jpg" 
                                  alt="Convenio Internacional" class="img-fluid">
                             <div class="news-badge">Programas</div>
                         </div>
@@ -522,8 +522,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <article class="news-card h-100">
                         <div class="news-image">
-                            <img src="Imagenes/proyecto.jpg" 
-                                 alt="Feria de Empleo" class="img-fluid">
+                            <img src="Imagenes/compressed-proyecto.jpg" 
+                                 alt="Proyecto en comunidad" class="img-fluid">
                             <div class="news-badge">Comunidad</div>
                         </div>
                         <div class="news-content">
@@ -545,8 +545,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <article class="news-card h-100">
                         <div class="news-image">
-                            <img src="Imagenes/tecnologia.jpg" 
-                                 alt="Competencia Nacional" class="img-fluid">
+                            <img src="Imagenes/compressed-tecnologia.jpg" 
+                                 alt="Tecnologia" class="img-fluid">
                             <div class="news-badge">Tecnología</div>
                         </div>
                         <div class="news-content">
@@ -569,8 +569,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <article class="news-card h-100">
                         <div class="news-image">
-                            <img src="Imagenes/universidad.jpg" 
-                                 alt="Becas Disponibles" class="img-fluid">
+                            <img src="Imagenes/compressed-universidad.jpg" 
+                                 alt="Universitarios" class="img-fluid">
                             <div class="news-badge">Proyección</div>
                         </div>
                         <div class="news-content">
@@ -592,7 +592,7 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <article class="news-card h-100">
                         <div class="news-image">
-                            <img src="Imagenes/acesoria.jpg" 
+                            <img src="Imagenes/compressed-acesoria.jpg" 
                                  alt="Semana Cultural" class="img-fluid">
                             <div class="news-badge">Diferenciación</div>
                         </div>
@@ -636,7 +636,10 @@
                             </div>
                             <div>
                                 <h4>Dirección</h4>
-                                <p class="text-muted mb-0">Av. Universidad 123<br>Ciudad Universitaria<br>CP 12345</p>
+                                <p class="text-muted mb-0">
+                                Huehuecoyotl Esq, Culturas de Mexico, 
+                                56607 Chalco de Díaz Covarrubias, Méx., México 
+                                </p>    
                             </div>
                         </div>
 
@@ -750,15 +753,6 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="privacidad" required>
-                                        <label class="form-check-label text-muted small" for="privacidad">
-                                            Acepto el tratamiento de mis datos personales conforme al 
-                                            <a href="#">Aviso de Privacidad</a>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
                                     <button type="submit" class="btn btn-primary btn-lg w-100">
                                         <i class="bi bi-send"></i> Enviar Mensaje
                                     </button>
@@ -828,7 +822,7 @@
                         <li><a href="https://www.ellibrototal.com/ltotal/" target="_blank" rel="noopener noreferrer">Biblioteca Virtual</a></li>
                         <li><a href="portal.cusc.edu.mx" target="_blank" rel="noopener noreferrer">Plataforma universitaria</a></li>
                         <li><a href="#contacto">Admisiones</a></li>
-                        <li><a href="#carreras">Pénsum Académico</a></li>
+                        <li><a href="#inicio">Pénsum Académico</a></li>
                     </ul>
                 </div>
                 
@@ -854,12 +848,7 @@
             <div class="footer-bottom">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0">&copy; 2025 Centro Universitario. Todos los derechos reservados.</p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <a href="#" class="footer-link-bottom">Aviso de Privacidad</a>
-                        <span class="mx-2">|</span>
-                        <a href="#" class="footer-link-bottom">Términos y Condiciones</a>
+                        <p class="mb-0">&copy; 2026 Centro Universitario. Todos los derechos reservados.</p>
                     </div>
                 </div>
             </div>
@@ -871,218 +860,7 @@
         <i class="bi bi-arrow-up"></i>
     </button>
 
-    <!-- Modales de Carreras -->
-    <!-- Modal Carrera 1 -->
-    <div class="modal fade" id="carreraModal1" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="bi bi-book"></i>Pedagogía</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Descripción</h6>
-                    <p>La Licenciatura en Pedagogía es una formación interdisciplinaria que estudia el fenómeno educativo, las teorías del aprendizaje y el desarrollo de estrategias didácticas. Está orientada a formar profesionales capaces de diseñar, implementar y evaluar procesos educativos en diversos contextos..</p>
-                    
-                    <h6>Plan de Estudios</h6>
-                    <ul>
-                        <li>Historia y filosofía de la educación</li>
-                        <li>Psicología educativa, social y organizacional</li>
-                        <li>Teorías y modelos pedagógicos contemporáneos</li>
-                        <li>Educación especial, valores y legalidad educativa</li>
-                        <li>Seminarios de habilidades cognitivas e investigación educativa</li>
-                    </ul>
-                    
-                    <h6>Campo Laboral</h6>
-                    <p>El egresado puede trabajar en instituciones educativas, organismos gubernamentales, proyectos sociales y empresas, participando en procesos de formación, asesoría pedagógica y desarrollo de programas educativos.</p>
-                        
-                        <a href="Pénsum de los cursos/pedagogía.pdf" download="pedagogía.pdf" class="btn-descarga">
-                        📥 Descargar Pénsum
-                        </a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">Solicitar Información</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal Carrera 2 -->
-    <div class="modal fade" id="carreraModal2" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="bi bi-search"></i>Criminología</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Descripción</h6>
-                    <p>La Licenciatura en Criminología forma profesionales capaces de analizar el fenómeno delictivo desde una perspectiva legal, psicológica y social. A lo largo de la formación, se desarrollan habilidades para investigar, prevenir y comprender el comportamiento criminal, así como intervenir en procesos de justicia y reinserción.</p>
-                    
-                    <h6>Plan de Estudios</h6>
-                    <ul>
-                        <li>Criminología y criminalística</li>
-                        <li>Derecho penal, procesal e internacional</li>
-                        <li>Psicología criminal, victimología y psiquiatría forense</li>
-                        <li>Técnicas de entrevista, investigación y litigación oral</li>
-                        <li>Medicina, química y fotografía forense</li>
-                        <li>Documentoscopía, grafoscopía y dactiloscopía</li>
-                        <li>Prevención del delito y sistema penal acusatorio</li>
-                        <li>Seminarios de investigación jurídica, criminal y forense</li>
-                        <li>Prácticas profesionales</li>
-                    </ul>
-                    
-                    <h6>Campo Laboral</h6>
-                    <p>El egresado puede desempeñarse en instituciones de seguridad pública, fiscalías, centros penitenciarios, organismos internacionales y consultorías privadas. Su perfil le permite participar en investigaciones criminales, análisis criminológico, atención a víctimas, prevención del delito y procesos de reinserción social.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">Solicitar Información</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Carrera 3 -->
-    <div class="modal fade" id="carreraModal3" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="bi bi-heart-pulse"></i> Medicina</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Descripción</h6>
-                    <p>La Licenciatura en Administración forma profesionales capaces de planear, organizar y dirigir recursos humanos, financieros y tecnológicos en entornos competitivos. A lo largo de la formación, se desarrollan habilidades en liderazgo, negociación, toma de decisiones y gestión estratégica, con enfoque en innovación y mejora continua.</p>
-                    
-                    <h6>Plan de Estudios</h6>
-                    <ul>
-                        <li>Introducción a la administración, contabilidad, economía, informática y derecho</li>
-                        <li>Mercadotecnia de productos, servicios e internacional</li>
-                        <li>Contabilidad administrativa, de costos y de sociedades</li>
-                        <li>Microeconomía, macroeconomía y estadística</li>
-                        <li>Derecho mercantil, laboral y fiscal</li>
-                        <li>Finanzas, administración de operaciones, producción y recursos humanos</li>
-                        <li>Logística, negociación empresarial y administración estratégica</li>
-                        <li>Investigación de mercados, proyectos y calidad total</li>
-                        <li>Publicidad, mercadotecnia social y administración del tiempo</li>
-                        <li>Seminarios de tesis y talleres de investigación</li>
-                    </ul>
-                    
-                    <h6>Campo Laboral</h6>
-                    <p>Médico general, especialista médico, investigador médico, docente, administrador de salud.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">Solicitar Información</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modales 4, 5, 6 (similares) -->
-    <div class="modal fade" id="carreraModal4" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="bi bi-bank"></i> Derecho</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Descripcion</h6>
-                    <p>La Licenciatura en Derecho forma profesionales con amplio conocimiento del sistema jurídico mexicano, capaces de interpretar leyes, defender causas y participar en procesos legales con responsabilidad y compromiso social. El programa desarrolla habilidades en análisis jurídico, expresión oral, argumentación legal y resolución de conflictos en distintos ámbitos del derecho.</p>
-                    
-                    <h6>Plan de Estudios</h6>
-                    <ul>
-                        <li>Introducción al derecho, historia jurídica y metodología legal</li>
-                        <li>Derecho romano, constitucional, penal, civil, mercantil y laboral</li>
-                        <li>Derecho internacional público y privado</li>
-                        <li>Procesos administrativos, fiscales y amparo</li>
-                        <li>Criminología, medicina forense y derecho ecológico</li>
-                        <li>Clínicas jurídicas en derecho civil, penal, laboral y fisca</li>
-                        <li>Seminarios de tesis y práctica profesional</li>
-                    </ul>
-
-                    <h6>Campo Laboral</h6>
-                    <p>El egresado puede trabajar en el sector público como parte del Ministerio Público, tribunales, defensorías, y departamentos jurídicos gubernamentales. También puede ejercer en el ámbito privado como abogado litigante, asesor legal, notario, consultor jurídico o en organizaciones civiles, contribuyendo a la defensa de derechos, solución de conflictos y fortalecimiento del estado de derecho</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">Solicitar Información</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="carreraModal5" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="bi bi-graph-up-arrow"></i> Mercadotecnia</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Descripcion</h6>
-                    <p>La Licenciatura en Mercadotecnia forma profesionales capaces de diseñar, ejecutar y evaluar estrategias de comunicación comercial, posicionamiento de productos y análisis de mercados. El programa desarrolla habilidades en investigación, publicidad, relaciones públicas, marketing digital y comunicación institucional, con enfoque creativo y empresarial.</p>
-                
-                <h6>Plan de Estudio</h6>
-                <ul>
-                    <li>Introducción a la comunicación, mercadotecnia y redacción</li>
-                    <li>Imagen institucional, comunicación organizacional y visual</li>
-                    <li>Mercadotecnia l, ll y digital</li>
-                    <li>Publicidad, medios y estrategias institucionales</li>
-                    <li>comunicación política, estratégica y corporativa</li>
-                    <li>Inglés I a V</li>
-                    <li>Seminarios de habilidades directivas</li>
-                    <li>Proyectos de mercadotecnia</li>
-                    <li>Investigación de mercados y desarrollo de productos</li>
-                </ul>
-
-                <h6>Campo Laboral</h6>
-                <p>El egresado puede trabajar en agencias de publicidad, empresas de investigación de mercados, firmas de relaciones públicas, departamentos de marketing en organizaciones públicas y privadas, medios de comunicación y plataformas digitales. Su perfil le permite liderar campañas, desarrollar productos, analizar tendencias y conectar estratégicamente con distintos públicos.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">Solicitar Información</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="carreraModal6" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="bi bi-rulers"></i>Contabilidad</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Descripcion</h6>
-                    <p>La Licenciatura en Contabilidad forma profesionales éticos y competentes, capaces de elaborar estados financieros, aplicar normas fiscales, realizar auditorías y gestionar recursos económicos. El programa desarrolla habilidades para adaptarse a los cambios del entorno económico y aportar soluciones estratégicas en diversas áreas contables.</p>
-                    
-                    <h6>Plan de Estudio</h6>
-                    <ul>
-                        <li>Contabilidad básica, intermedia, avanzada y administrativa</li>
-                        <li>Matemáticas financieras, estadística y presupuesto</li>
-                        <li>Economía, derecho civil, fiscal y laboral</li>
-                        <li>Auditoría I y II, contabilidad hotelera, bancaria y gubernamental</li>
-                        <li>Finanzas empresariales y administración financiera</li>
-                        <li>Impuestos I y II</li>
-                        <li>Seminarios de contabilidad, auditoría, impuestos y tesis</li>
-                        <li>- Inglés I a VII</li>
-                    </ul>
-                    <h6>Campo Laboral</h6>
-                    <p>El egresado puede desempeñarse en áreas como contabilidad general, auditoría, fiscal, costos, finanzas y docencia. Puede trabajar en empresas privadas, instituciones públicas, despachos contables, organizaciones sin fines de lucro o como consultor independiente, elaborando presupuestos, declaraciones fiscales, conciliaciones, proyecciones financieras y asesorías contables.</p>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">Solicitar Información</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -1095,7 +873,6 @@
     
     <!-- Custom JS -->
     <script src="js/main.js"></script>
-
 </body>
 </html>
 

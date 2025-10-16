@@ -123,6 +123,48 @@ img {
     transform: translateY(-2px);
 }
 
+/* boton para mandar al area de contacto desde el encaberzado*/
+.boton-inicio-contacto a {
+  color: #fff !important;
+  text-decoration: none; /* quita el subrayado */
+}
+
+.quick-access-card-link {
+  text-decoration: none; /* quita el subrayado */
+  display: block;        /* permite que el enlace ocupe todo el espacio */
+  height: 100%;
+}
+
+.quick-access-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.quick-access-card i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.quick-access-card span {
+  font-weight: 600;
+  color: #fff;
+}
+
+.quick-access-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 /* ===== Hero Section ===== */
 .hero-section {
     position: relative;
@@ -190,6 +232,48 @@ img {
     background: var(--white);
     color: var(--primary-color);
     transform: translateY(-3px);
+}
+
+/*Boton animado "Conoces Nuestras Carreras"*/
+
+.btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #dc2626;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
 }
 
 /* Quick Access Cards */
@@ -294,6 +378,11 @@ img {
     }
 }
 
+.boton-animado {
+    color: white;
+}
+
+
 /* ===== Section Styles ===== */
 .section-bg {
     background: var(--bg-light);
@@ -370,19 +459,25 @@ img {
 }
 
 /* ==== VALUE CARD ==== */
+
+
 .value-card {
-    padding: 2rem;
-    background: var(--white);
-    border-radius: 1rem;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-    height: 100%;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: perspective(1000px) translateZ(0);
+  height: 100%;
+  will-change: transform;
 }
 
 .value-card:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-10px);
+  transform: scale(1.08) perspective(1000px) translateZ(20px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
+
 
 /* ==== ICON BOX ==== */
 .icon-box {
@@ -943,5 +1038,209 @@ img {
 .btn-primary:hover {
     background-color: var(--primary-dark);
     border-color: var(--primary-dark);
+}
+
+
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+/* CSS para el modal de pensum*/
+
+
+
+
+/* Asegura que el modal esté por encima del fondo */
+.modal {
+  z-index: 1050;
+}
+
+/* Corrige el fondo opaco para que no bloquee clics */
+.modal-backdrop {
+  z-index: 1040;
+}
+
+/* Estilo para los botones dentro del modal */
+.modal-content .btn-light {
+  color: #002b5c;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .btn-light:hover {
+  background-color: #e0e0e0;
+}
+
+/* Botón de cerrar */
+.modal-footer .btn-secondary {
+  background-color: #ffffff;
+  color: #002b5c;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Título del modal */
+.modal-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.modal {
+  z-index: 2000 !important;
+}
+
+.modal-backdrop {
+  z-index: 1900 !important;
+}
+
+/* --- FIX para modal que no se puede cerrar o tiene fondo oscuro bloqueando --- */
+.modal-backdrop.show {
+  opacity: 0.5 !important; /* visibilidad normal */
+  pointer-events: none !important; /* evita que bloquee clics */
+}
+
+.modal.show {
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+  z-index: 2000 !important;
+}
+
+body.modal-open {
+  overflow: hidden !important; /* evita scroll de fondo */
+}
+
+.modal-dialog {
+  z-index: 2100 !important;
+  pointer-events: auto !important;
+}
+
+.modal-content {
+  pointer-events: auto !important;
+}
+
+.modal-backdrop.show {
+  background-color: transparent !important;
+  opacity: 0 !important;
+}
+
+.modal-content {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.btn {
+  white-space: nowrap;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.menu-button {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  background: linear-gradient(135deg, #3a8dde, #276bba); /* Degradado azul */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+  background: linear-gradient(135deg, #276bba, #1a4e89);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: white;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-button i {
+  font-size: 18px;
+  min-width: 20px;
+}
+
+.menu-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.menu-square {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  padding: 20px 10px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-square i {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.menu-square:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 

@@ -386,3 +386,8 @@ function formatPhone(phone) {
     };
 })();
 
+// Al abrir el menú
+document.body.classList.add('no-scroll');
+
+// Al cerrar el menú
+document.body.classList.remove('no-scroll');
