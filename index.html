@@ -1,3 +1,5 @@
+<!--MODIFICAR NUMEROS DE TELEFONO PARA WHATSAPP EN LINEA 863 Y 775-->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -36,12 +38,18 @@
     <link rel="icon" type="image/x-icon" href="Imagenes/AnyConv.com__Logo universidad - copia.ico">
 </head>
 <body>
+
+    <!--Boton flotante whatsapp-->
+        <a href="https://wa.me/5559756260?text=Hola%20me%20gustaría%20recibir%20información%20sobre%20las%20carreras"
+    class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    </a>
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#inicio">
-            <img src="Imagenes/Logo universidad.jpg" alt="Logo universidad"
+            <img src="Imagenes/compressed-Logo universidad.jpg" alt="Logo universidad"
                 style="width: 3rem; height: 3rem; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 0.5rem;">
             Centro Universitario Santa Cecilia
             </a>
@@ -90,16 +98,79 @@
                         
                         <!--Boton animado-->
                         <div>
-                        <button class="btn" href="#carreras"><i class="animation"></i> <a class="boton-animado" href="#carreras">Conoces Nuestras Carreras </a><i class="animation"></i>
-                        </button>
+                            <button class="c-button c-button--gooey">
+                            <a class="boton-principal" href="#carreras">
+                                Conoce nuestras Carreras
+                            </a>
+                            <div class="c-button__blobs">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            </button>
+                            <svg
+                            style="display: block; height: 0; width: 0;"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <defs>
+                                <filter id="goo">
+                                <feGaussianBlur
+                                    result="blur"
+                                    stdDeviation="10"
+                                    in="SourceGraphic"
+                                ></feGaussianBlur>
+                                <feColorMatrix
+                                    result="goo"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                                    mode="matrix"
+                                    in="blur"
+                                ></feColorMatrix>
+                                <feBlend in2="goo" in="SourceGraphic"></feBlend>
+                                </filter>
+                            </defs>
+                            </svg>
+
                         </div>
-                        <!--Fin boton animado-->
-                    <div>
-                        <a href="#nosotros" class="btn btn-outline-light btn-lg">
-                            <i class="bi bi-info-circle"></i> Más Información
-                        </a>
-                    </div>
+                        <div>
+                            <button class="c-button c-button--gooey">
+                            <a class="boton-principal" href="#nosotros">
+                                Mas Informacion
+                            </a>
+                            <div class="c-button__blobs">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            </button>
+                            <svg
+                            style="display: block; height: 0; width: 0;"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <defs>
+                                <filter id="goo">
+                                <feGaussianBlur
+                                    result="blur"
+                                    stdDeviation="10"
+                                    in="SourceGraphic"
+                                ></feGaussianBlur>
+                                <feColorMatrix
+                                    result="goo"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                                    mode="matrix"
+                                    in="blur"
+                                ></feColorMatrix>
+                                <feBlend in2="goo" in="SourceGraphic"></feBlend>
+                                </filter>
+                            </defs>
+                            </svg>
+
+                        </div>
+
+
                     
+                        <!--Fin boton animado-->
                     <!-- Quick Access Cards -->
                     <div class="row g-3 mt-4 justify-content-center">
                         <div class="col-md-3 col-6">
@@ -669,8 +740,7 @@
                             <div>
                                 <h4>Email</h4>
                                 <p class="text-muted mb-0">
-                                    informes@centrouniversitario.edu<br>
-                                    admisiones@centrouniversitario.edu
+                                    contacto@cusc.mx<br>
                                 </p>
                             </div>
                         </div>
@@ -707,9 +777,8 @@
                                 <a href="https://youtube.com" target="_blank" class="social-link">
                                     <i class="bi bi-youtube"></i>
 
-                                <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="social-link">
-                                    <i class="bi bi-whatsapp"></i>
-                                </a>
+                                
+                                <a href="https://wa.me/5559756260?text=Hola%20me%20gustaría%20recibir%20información%20sobre%20las%20carreras" target="_blank" class="social-link"><i class="bi bi-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -778,83 +847,87 @@
             </div>
             </div>
 
+            <!-- Mapa Integrado -->
+                        <div class="map-section">
+            <h5 class="footer-subtitle">¿Cómo llegar?</h5>
+            <div class="map-container">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235.39658708670214!2d-98.9024715!3d19.2673404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1f26e53dc3a7%3A0xf7334984d0cbbf90!2sCentro%20de%20Capacitaci%C3%B3n%20Santa%20Cecilia%20S.C!5e0!3m2!1ses-419!2sgt!4v1760655300800!5m2!1ses-419!2sgt"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p class="map-link">
+                <a href="https://maps.app.goo.gl/XvS2uWZjYp1fvw397" target="_blank">
+                    Ver en Google Maps
+                </a>
+                </p>
+            </div>
+            </div>  
+    </section>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row g-4 py-5">
-                <div class="col-lg-4">
-                    <h3 class="footer-title">
-                        <img src="Imagenes/Logo universidad.jpg" alt="Logo universidad"
-                style="width: 3rem; height: 3rem; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 0.5rem;">
-                        Centro Universitario Santa Cecilia
-                    </h3>
-                    <p class="text-footer">
-                        Formando profesionales de excelencia comprometidos con el desarrollo 
-                        de la socieda.
-                    </p>
-                    <div class="footer-social">
-                        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="footer-subtitle">Enlaces Rápidos</h5>
-                    <ul class="footer-links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#carreras">Carreras</a></li>
-                        <li><a href="#noticias">Construyendo Futuro</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-4">
-                    <h5 class="footer-subtitle">Servicios</h5>
-                    <ul class="footer-links">
-                        <li><a href="https://www.ellibrototal.com/ltotal/" target="_blank" rel="noopener noreferrer">Biblioteca Virtual</a></li>
-                        <li><a href="portal.cusc.edu.mx" target="_blank" rel="noopener noreferrer">Plataforma universitaria</a></li>
-                        <li><a href="#contacto">Admisiones</a></li>
-                        <li><a href="#inicio">Pénsum Académico</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-4">
-                    <h5 class="footer-subtitle">Contacto</h5>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="bi bi-geo-alt"></i>
-                            <span>Huehuecoyotl Esq, Culturas de Mexico, 56607 Chalco de Díaz Covarrubias, Méx., México</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-telephone"></i>
-                            <span>+55 5975 6260</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-envelope"></i>
-                            <span>informes@centrouniversitario.edu</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0">&copy; 2026 Centro Universitario. Todos los derechos reservados.</p>
-                    </div>
-                </div>
-            </div>
+                <!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="row g-4 py-5 mx-0">
+      <!-- Institución -->
+      <div class="col-lg-4 col-md-6 px-4">
+        <h3 class="footer-title">
+          <img src="Imagenes/compressed-Logo universidad.jpg" alt="Logo universidad"
+               style="width: 3rem; height: 3rem; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 0.5rem;">
+          Centro Universitario Santa Cecilia
+        </h3>
+        <p class="text-footer">
+          Formando profesionales de excelencia comprometidos con el desarrollo de la sociedad.
+        </p>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+          <a href="https://wa.me/5559756260?text=Hola%20me%20gustaría%20recibir%20información%20sobre%20las%20carreras" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
-    </footer>
+      </div>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollTopBtn" class="scroll-to-top">
-        <i class="bi bi-arrow-up"></i>
-    </button>
+      <!-- Enlaces Rápidos -->
+      <div class="col-lg-2 col-md-6 px-4">
+        <h5 class="footer-subtitle">Enlaces Rápidos</h5>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#carreras">Carreras</a></li>
+          <li><a href="#noticias">Construyendo Futuro</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicios -->
+      <div class="col-lg-3 col-md-6 px-4">
+        <h5 class="footer-subtitle">Servicios</h5>
+        <ul class="footer-links">
+          <li><a href="https://www.ellibrototal.com/ltotal/" target="_blank">Biblioteca Virtual</a></li>
+          <li><a href="https://portal.cusc.edu.mx" target="_blank">Plataforma Universitaria</a></li>
+          <li><a href="#contacto">Admisiones</a></li>
+          <li><a href="#pensum">Pénsum Académico</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-lg-3 col-md-6 px-4">
+        <h5 class="footer-subtitle">Contacto</h5>
+        <ul class="footer-contact">
+          <li><i class="bi bi-geo-alt"></i> Huehuecoyotl Esq. Culturas de México, 56607 Chalco de Díaz Covarrubias, Méx., México</li>
+          <li><i class="bi bi-telephone"></i> +55 5975 6260</li>
+          <li><i class="bi bi-envelope"></i> <a  class="text-light text-decoration-none">contacto@cusc.mx</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center py-3">
+      <p class="mb-0">&copy; 2026 Centro Universitario. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
 
 
 
@@ -869,6 +942,7 @@
     
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    
 
     <!-- Google reCAPTCHA -->
      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
