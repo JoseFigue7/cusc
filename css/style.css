@@ -536,13 +536,17 @@ img {
     display: inline-block;
     max-width: 100%; /* Ajusta el tamaño general del contenedor */
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 4.4; /* Estirado vertical un 10% (4:4.4 en lugar de 4:4) */
+    overflow: visible; /* Permite que el marco decorativo sea visible */
 }
 
 .about-image-wrapper img {
     width: 100%; /* La imagen se adapta al contenedor */
-    height: auto;
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    object-fit: cover; /* Evita deformación excesiva */
+    object-position: center; /* Centra la imagen */
     border-radius: 1rem;
+    display: block; /* Evita espacios en blanco debajo de la imagen */
 }
 
 .about-image-wrapper::before {
