@@ -10,9 +10,57 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../../CSS/carreras.css" />
+  <link rel="stylesheet" href="../../css/carreras.css" />
+  
+  <!--Icon de la pagina-->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../Imagenes/logo_back_dark_cut.png?v=5">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../Imagenes/logo_back_dark_cut.png?v=5">
+  <link rel="apple-touch-icon" href="../../Imagenes/logo_back_dark_cut.png?v=5">
+  <link rel="shortcut icon" type="image/png" href="../../Imagenes/logo_back_dark_cut.png?v=5">
 </head>
 <body data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="0">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="../../index.html">
+        <img src="../../Imagenes/logo_back_dark_cut.png" alt="Logo universidad"
+            style="width: 4.5rem; height: 4.5rem; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 0.5rem;">
+        Centro Universitario Santa Cecilia
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#inicio">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="academicosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Académicos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="academicosDropdown">
+                        <li><a class="dropdown-item" href="../../index.html#carreras">Carreras</a></li>
+                        <li><a class="dropdown-item" href="../../index.html#nosotros">Nosotros</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#noticias">Construyendo Futuro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://plataforma.cusc.mx" target="_blank">Plataforma</a>
+                </li>
+                <li class="nav-item ms-2">
+                    <a class="btn btn-primary btn-sm" href="../../index.html#contacto">Inscríbete</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <!-- Hero con ola decorativa -->
 <section class="career-hero position-relative">
@@ -27,7 +75,7 @@
 <!-- Contenido -->
 <main class="container my-5">
   <div class="text-center mb-5" data-aos="fade-up">
-    <h1 class="titulo-carrera">Carrera de <span class="shiny-text">Derecho</span></h1>
+    <h1 class="titulo-carrera"><span class="shiny-text">LICENCIATURA EN DERECHO</span></h1>
     <p class="subtexto">Formando <strong class="shiny-text">juristas</strong> con ética, criterio y vocación de justicia</p>
     <a class="cta-button" href="../../index.html#contacto" aria-label="Inscribirme en Derecho">Inscribirme</a>
   </div>
@@ -36,7 +84,7 @@
     <div class="col-md-12">
       <div class="info-box glass-card">
         <h3><i class="bi bi-book"></i> Descripción breve</h3>
-        <p>Prepara profesionales con dominio del sistema jurídico mexicano, capaces de interpretar leyes, defender causas y participar en procesos legales con ética y responsabilidad.</p>
+        <p>La Licenciatura en Derecho prepara profesionales con dominio del sistema jurídico mexicano, capaces de interpretar leyes, defender causas y participar en procesos legales con ética y responsabilidad. Modalidad presencial con horarios vespertinos.</p>
       </div>
     </div>
 
@@ -50,7 +98,38 @@
     <div class="col-md-6">
       <div class="info-box glass-card">
         <h3><i class="bi bi-calendar"></i> Inicio</h3>
-        <p>2026</p>
+        <p>Febrero 2026</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-clock-fill"></i> Horarios</h3>
+        <p>Jueves: 5:00 PM a 7:00 PM<br>Sábado: 8:00 AM a 1:00 PM</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-laptop"></i> Modalidad</h3>
+        <p>Modalidad Mixta<br>Abierta/ A Distancia</p>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="info-box glass-card">
+        <h3><i class="bi bi-graph-up"></i> Estructura Académica</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <p><strong>Carga Académica:</strong> 112 horas bajo conducción de académico (HA) por cuatrimestre</p>
+          </div>
+          <div class="col-md-4">
+            <p><strong>Trabajo Independiente:</strong> 448 horas independientes (HI) por cuatrimestre</p>
+          </div>
+          <div class="col-md-4">
+            <p><strong>Duración Cuatrimestre:</strong> 14 semanas</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -60,44 +139,170 @@
         <div class="study-grid">
           <div class="study-card" data-aos="zoom-in">
             <span class="study-icon"><i class="bi bi-journal-text" style="font-size: 1.5rem;"></i></span>
-            <div class="study-content"><h4>Derecho romano, constitucional, penal, civil y mercantil</h4><p>Fundamentos y ramas esenciales del derecho mexicano.</p></div>
-          </div>
-          <div class="study-card" data-aos="zoom-in">
-            <span class="study-icon"><i class="bi bi-globe-americas" style="font-size: 1.5rem;"></i></span>
-            <div class="study-content"><h4>Derecho internacional público y privado</h4><p>Normativas que regulan relaciones entre estados y particulares a nivel global.</p></div>
-          </div>
-          <div class="study-card" data-aos="zoom-in">
-            <span class="study-icon"><i class="bi bi-bank" style="font-size: 1.5rem;"></i></span>
-            <div class="study-content"><h4>Derecho laboral, fiscal y ecológico</h4><p>Regulación del trabajo, tributación y protección ambiental.</p></div>
-          </div>
-          <div class="study-card" data-aos="zoom-in">
-            <span class="study-icon"><i class="bi bi-file-earmark-text" style="font-size: 1.5rem;"></i></span>
-            <div class="study-content"><h4>Procesos administrativos, fiscales y de amparo</h4><p>Procedimientos legales ante autoridades y defensa constitucional.</p></div>
-          </div>
-          <div class="study-card" data-aos="zoom-in">
-            <span class="study-icon"><i class="bi bi-person-bounding-box" style="font-size: 1.5rem;"></i></span>
-            <div class="study-content"><h4>Criminología y medicina forense</h4><p>Estudio del delito y análisis médico legal aplicado a la justicia.</p></div>
+            <div class="study-content">
+              <h4>Cuatrimestre 1</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Acto jurídico y personas</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Historia del derecho mexicano</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Fundamentos generales del derecho</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Teoría general del estado</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Estrategias y métodos para el aprendizaje en línea</li>
+              </ul>
+            </div>
           </div>
           <div class="study-card" data-aos="zoom-in">
             <span class="study-icon"><i class="bi bi-building" style="font-size: 1.5rem;"></i></span>
-            <div class="study-content"><h4>Clínicas jurídicas en derecho civil, penal, laboral y fiscal</h4><p>Práctica legal supervisada en distintas áreas del derecho.</p></div>
+            <div class="study-content">
+              <h4>Cuatrimestre 2</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Bienes y derechos reales</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho administrativo</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Teoría general del proceso</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Filosofía del derecho</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derechos humanos y sus garantías</li>
+              </ul>
+            </div>
           </div>
           <div class="study-card" data-aos="zoom-in">
-            <span class="study-icon"><i class="bi bi-pencil-square" style="font-size: 1.5rem;"></i></span>
-            <div class="study-content"><h4>Seminarios de tesis</h4><p>Desarrollo de investigación jurídica y preparación para titulación.</p></div>
+            <span class="study-icon"><i class="bi bi-file-earmark-text" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content">
+              <h4>Cuatrimestre 3</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Obligaciones</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho procesal administrativo</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Lógica y argumentación jurídica</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Teoría de la penal y del delito</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Títulos y operaciones de crédito</li>
+              </ul>
+            </div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-file-contract" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content">
+              <h4>Cuatrimestre 4</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Contratos civiles</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho fiscal</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho agrario</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Delitos en particular</li>
+              </ul>
+            </div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-people" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content">
+              <h4>Cuatrimestre 5</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho familiar</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho procesal fiscal</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho procesal agrario</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho procesal penal</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Sociedades mercantiles</li>
+              </ul>
+            </div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-bank" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content">
+              <h4>Cuatrimestre 6</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho sucesorio</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho constitucional</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho individual de trabajo</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Justicia alternativa</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Seguros y fianzas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-gavel" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content">
+              <h4>Cuatrimestre 7</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho procesal civil</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho procesal constitucional</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho colectivo de trabajo</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Práctica de juicio oral penal</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho procesal mercantil</li>
+              </ul>
+            </div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-globe-americas" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content">
+              <h4>Cuatrimestre 8</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Juicios especiales</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho de amparo</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho de la seguridad social</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho internacional público</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Investigación jurídica I</li>
+              </ul>
+            </div>
+          </div>
+          <div class="study-card" data-aos="zoom-in">
+            <span class="study-icon"><i class="bi bi-check2-circle" style="font-size: 1.5rem;"></i></span>
+            <div class="study-content">
+              <h4>Cuatrimestre 9</h4>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho notarial y registral</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Prácticas de amparo</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Sistemas corporativos comparados</li>
+                <li><i class="bi bi-check-circle text-primary me-2"></i>Derecho internacional privado</li>
+              </ul>
+            </div>
           </div>
 
-          <a href="../../Pénsum de los cursos/derecho.pdf" download class="btn descarga-esquina">
-          Descargar pensum completo
-        </a>
+          <a href="malla-curricular/Derecho Mix.xlsx" download class="btn descarga-esquina">
+            Descargar mapa curricular
+          </a>
         </div>
       </div>
     </div>
 
     <div class="col-md-12">
       <div class="info-box glass-card" data-aos="fade-up">
-        <h3><i class="bi bi-briefcase"></i> Campo laboral</h3>
-        <p>Ministerio Público, tribunales, defensorías, asesoría legal, notariado, consultoría jurídica, organizaciones civiles, docencia y litigio.</p>
+        <h3><i class="bi bi-person-check"></i> Perfil de Egresado</h3>
+        <p>Amplio conocimiento del sistema jurídico mexicano (o del país correspondiente), incluyendo la Constitución, leyes federales y locales, jurisprudencia y doctrina relevante. Esto abarca áreas como derecho civil, penal, mercantil, administrativo, constitucional, internacional, etc.</p>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="info-box glass-card" data-aos="fade-up">
+        <h3><i class="bi bi-file-check"></i> Requisitos de Admisión</h3>
+        <ul style="list-style: none; padding-left: 0;">
+          <li><i class="bi bi-check-circle-fill text-primary"></i> Certificado de bachillerato (original y copias)</li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i> Acta de nacimiento (original y copias)</li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i> CURP (Clave Única de Registro de Población)</li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i> Certificado médico</li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i> Fotografías</li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i> Comprobante de domicilio</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="info-box glass-card" data-aos="fade-up">
+        <h3><i class="bi bi-briefcase"></i> Campo Laboral</h3>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h5><i class="bi bi-building"></i> Sector Público</h5>
+            <ul style="list-style: none; padding-left: 0;">
+              <li><i class="bi bi-check-circle text-primary"></i> <strong>Ministerios públicos:</strong> Investigación y persecución de delitos.</li>
+              <li><i class="bi bi-check-circle text-primary"></i> <strong>Poder judicial:</strong> Jueces, magistrados, secretarios judiciales, actuarios.</li>
+              <li><i class="bi bi-check-circle text-primary"></i> <strong>Defensoría pública:</strong> Representación legal de personas que no pueden costear un abogado.</li>
+              <li><i class="bi bi-check-circle text-primary"></i> <strong>Administración pública:</strong> Asesoría jurídica en diferentes dependencias gubernamentales (municipales, estatales y federales).</li>
+              <li><i class="bi bi-check-circle text-primary"></i> <strong>Legislaturas:</strong> Elaboración y análisis de leyes.</li>
+              <li><i class="bi bi-check-circle text-primary"></i> <strong>Organismos reguladores:</strong> Supervisión y cumplimiento de normas en diferentes sectores.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5><i class="bi bi-briefcase"></i> Sector Privado</h5>
+            <ul style="list-style: none; padding-left: 0;">
+              <li><i class="bi bi-check-circle text-primary"></i> <strong>Despachos de abogados:</strong> Asesoría jurídica a empresas e individuos, litigios, elaboración de contratos, etc. Diferentes especializaciones dentro de los despachos, como derecho corporativo, derecho inmobiliario, derecho fiscal, etc.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -108,6 +313,16 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+  
+  // Navbar scroll effect
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('mainNav');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
 </script>
 </body>
 </html>

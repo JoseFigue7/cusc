@@ -1,25 +1,123 @@
 /* ===== VARIABLES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+:root {
+  --primary-color: #022A3E;
+  --primary-dark: #056B8E;
+  --primary-light: #0BBFCF;
+  --secondary-color: #CAA050;
+  --accent-color: #DBB86A;
+  --bg-light: #E9E9E9;
+  --white: #ffffff;
+  --text-dark: #1f2937;
+  --text-muted: #6b7280;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+}
+
+/* ===== NAVIGATION STYLES ===== */
+#mainNav {
+    background: rgba(2, 42, 62, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+#mainNav.scrolled {
+    background: rgba(2, 42, 62, 1);
+    padding: 0.5rem 0;
+    box-shadow: var(--shadow-md);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white) !important;
+    font-family: 'Merriweather', serif;
+}
+
+.navbar-brand i {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+    border-radius: 0.375rem;
+    transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--white) !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    background: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-lg);
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    color: var(--text-dark);
+    padding: 0.75rem 1.5rem;
+    transition: var(--transition);
+}
+
+.dropdown-item:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.navbar .btn-primary {
+    background: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+}
+
+.navbar .btn-primary:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
 body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(to bottom, #e3f2fd, #e3f2fd);
     }
 
     .titulo-carrera {
+      font-family: 'Merriweather', serif;
       font-weight: 700;
-      color: #002b5c;
+      color: var(--primary-color);
     }
 
     .shiny-text {
-      color: #e63946;
+      color: var(--secondary-color);
     }
 
     .subtexto {
+      font-family: "Century Gothic", "CenturyGothic", "URW Gothic L", Arial, sans-serif;
+      font-weight: 400;
       font-size: 1.2rem;
       color: #555;
     }
 
     .cta-button {
-      background-color: #e63946;
+      background-color: var(--secondary-color);
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 0.5rem;
@@ -29,7 +127,7 @@ body {
     }
 
     .cta-button:hover {
-      background-color: #d62828;
+      background-color: var(--accent-color);
     }
 
     .info-box {
@@ -56,7 +154,7 @@ body {
     }
 
     .study-card {
-      background-color: #002b5c;
+      background-color: var(--primary-color);
       color: white;
       border-radius: 1rem;
       padding: 1rem;
@@ -71,7 +169,7 @@ body {
     }
 
     .study-icon svg {
-      background-color: #e63946;
+      background-color: var(--accent-color);
       border-radius: 50%;
       padding: 0.5rem;
     }
@@ -124,7 +222,6 @@ body {
   font-weight: 700;
   transition: 0.6s;
   box-shadow: 0px 0px 60px #1f4c65;
-  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 }
 
 .descarga-esquina:active {
@@ -132,7 +229,7 @@ body {
 }
 
 .descarga-esquina:hover {
-  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  background: linear-gradient(270deg, rgba(2, 42, 62, 0.68) 0%, rgba(11, 191, 207, 0.87) 60%);
   color: rgb(4, 4, 38);
 }
 
@@ -152,7 +249,6 @@ body {
   font-weight: 700;
   transition: 0.6s;
   box-shadow: 0px 0px 60px #1f4c65;
-  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 }
 
 .descarga-container {
@@ -169,12 +265,11 @@ body {
   border-radius: 0.4rem;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #002b5c;
+  background-color: var(--primary-color);
   color: rgb(234, 234, 234);
   font-weight: 700;
   transition: 0.6s;
   box-shadow: 0px 0px 60px #1f4c65;
-  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 }
 
 .btn:active {
@@ -182,8 +277,7 @@ body {
 }
 
 .btn:hover {
-  background: rgb(4, 49, 133);
-  background: linear-gradient(270deg, rgba(6, 80, 218, 0.681) 0%, rgba(45, 129, 207, 0.873) 60%);
+  background: linear-gradient(270deg, var(--primary-dark) 0%, var(--primary-light) 60%);
   color: rgb(4, 4, 38);
 }
 

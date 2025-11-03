@@ -128,7 +128,7 @@ $asunto = 'Nuevo mensaje de contacto - Centro Universitario';
 // Mapeo de opciones de interés
 $motivos_consulta = [
     'informacion-general' => 'Información General',
-    'admision' => 'Proceso de Admisión',
+    'admission' => 'Proceso de Admisión',
     'becas' => 'Becas y Financiamiento',
     'carreras' => 'Información de Carreras',
     'visita' => 'Agendar Visita',
