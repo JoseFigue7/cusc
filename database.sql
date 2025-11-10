@@ -184,7 +184,7 @@ INSERT INTO configuracion (clave, valor, descripcion, tipo) VALUES
 ('nombre_universidad', 'Centro Universitario', 'Nombre oficial de la institución', 'texto'),
 ('email_contacto', 'informes@centrouniversitario.edu', 'Email principal de contacto', 'texto'),
 ('telefono_contacto', '+52 (555) 123-4567', 'Teléfono principal', 'texto'),
-('direccion', 'Av. Universidad 123, Ciudad Universitaria', 'Dirección física', 'texto'),
+('direccion', 'Calle Yaquis, Lt 1, Mz. 11, Esquina Huehuecoyotl, Colonia Culturas de México, Chalco, Estado de México, C.P. 56607', 'Dirección física', 'texto'),
 ('facebook_url', 'https://facebook.com', 'URL de Facebook', 'texto'),
 ('twitter_url', 'https://twitter.com', 'URL de Twitter', 'texto'),
 ('instagram_url', 'https://instagram.com', 'URL de Instagram', 'texto'),

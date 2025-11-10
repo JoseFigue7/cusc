@@ -282,7 +282,7 @@ $cuerpo_confirmacion = '
 <body>
     <div class="container">
         <div class="header">
-            <h1>¡Gracias por Contactarnos!</h1>
+            <h1>¡Gracias por contactarnos!</h1>
         </div>
         <div class="content">
             <p>Hola <strong>' . htmlspecialchars($nombre) . '</strong>,</p>
@@ -304,7 +304,7 @@ $cuerpo_confirmacion = '
             
             <div class="footer">
                 <p><strong>Centro Universitario</strong></p>
-                <p>Av. Universidad 123, Ciudad Universitaria</p>
+                <p>Calle Yaquis, Lt 1, Mz. 11, Esquina Huehuecoyotl, Colonia Culturas de México, Chalco, Estado de México, C.P. 56607</p>
                 <p>Este es un mensaje automático, por favor no respondas a este email.</p>
             </div>
         </div>

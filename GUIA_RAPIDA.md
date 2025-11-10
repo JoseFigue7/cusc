@@ -28,7 +28,7 @@ Busca y reemplaza:
 - ✏️ "Centro Universitario" → Tu nombre de universidad
 - ✏️ "+52 (555) 123-4567" → Tu teléfono
 - ✏️ "informes@centrouniversitario.edu" → Tu email
-- ✏️ "Av. Universidad 123" → Tu dirección
+- ✏️ "Calle Yaquis, Lt 1, Mz. 11, Esquina Huehuecoyotl, Colonia Culturas de México, Chalco, Estado de México, C.P. 56607" → Tu dirección
 
 ### ✅ Paso 2: Colores Institucionales
 
